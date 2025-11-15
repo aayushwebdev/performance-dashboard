@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  color: white !important;
+  padding: 20px 80px;
+}
+
+.control-row{
+  padding: 0 80px;
+}
+
+.performance-monitor {
+  padding: 16px;
+}
+
+.stream {
+  padding: 20px;
+}
+
+.filter-container {
+  padding: 40px 80px;
+}
+
+.filter {
+  padding: 20px;
+  gap: 16px;
+}
+
+.filter-btn {
+  padding: 8px;
+  margin: 2px;
+}
+
+.spacing {
+  padding: 12px;
+}
+
+.time-aggregation {
+  margin: 12px 0;
+}
+
+.chart-container {
+  margin: 0 80px 10px 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  margin: 40px 80px 20px 80px;
+  padding: 20px;
+
 }
