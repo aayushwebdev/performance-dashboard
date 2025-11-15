@@ -19,7 +19,8 @@ function LineChart({
   color = '#3b82f6'
 }: LineChartProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const rafRef = useRef<number>();
+  // const rafRef = useRef<number>();
+  const rafRef = useRef<number | undefined>(undefined);
   const dataRef = useRef<DataPoint[]>([]);
 
   const dimensions: ChartDimensions = {
