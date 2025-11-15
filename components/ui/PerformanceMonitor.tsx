@@ -1,4 +1,3 @@
-// components/ui/PerformanceMonitor.tsx
 'use client';
 
 import { PerformanceMetrics } from '@/lib/types';

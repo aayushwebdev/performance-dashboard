@@ -1,4 +1,3 @@
-// components/charts/BarChart.tsx
 'use client';
 
 import { useEffect, useRef, useMemo, memo } from 'react';

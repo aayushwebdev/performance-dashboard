@@ -1,4 +1,3 @@
-// lib/dataGenerator.ts
 import { DataPoint } from './types';
 
 export function generateTimeSeriesData(count: number): DataPoint[] {
@@ -7,7 +6,7 @@ export function generateTimeSeriesData(count: number): DataPoint[] {
   const categories = ['A', 'B', 'C', 'D', 'E'];
 
   for (let i = 0; i < count; i++) {
-    const timeOffset = (count - i) * 100; // 100ms intervals
+    const timeOffset = (count - i) * 100; 
     const timestamp = now - timeOffset;
     
     // Generate realistic time-series data with trends and noise

@@ -1,4 +1,3 @@
-// components/controls/FilterPanel.tsx
 'use client';
 
 import { FilterConfig } from '@/lib/types';

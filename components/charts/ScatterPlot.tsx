@@ -1,4 +1,3 @@
-// components/charts/ScatterPlot.tsx
 'use client';
 
 import { useEffect, useRef, useMemo } from 'react';

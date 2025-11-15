@@ -1,4 +1,3 @@
-// lib/canvasUtils.ts
 import { ChartDimensions, CoordinateSystem } from './types';
 
 export function setupCanvas(

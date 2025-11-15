@@ -1,4 +1,3 @@
-// app/DashboardClient.tsx
 'use client';
 
 import { useState, useMemo, useTransition } from 'react';
@@ -10,7 +9,7 @@ import BarChart from '@/components/charts/BarChart';
 import ScatterPlot from '@/components/charts/ScatterPlot';
 import Heatmap from '@/components/charts/Heatmap';
 import PerformanceMonitor from '@/components/ui/PerformanceMonitor';
-import FilterPanel from '@/components/ui/FilterPanel';
+import FilterPanel from '@/components/controls/FilterPanel';
 import { filterByCategories, aggregateByTime } from '@/lib/performanceUtils';
 import { generateTimeSeriesData } from '@/lib/dataGenerator';
 

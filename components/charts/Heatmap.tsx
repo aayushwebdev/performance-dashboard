@@ -1,4 +1,3 @@
-// components/charts/Heatmap.tsx
 'use client';
 
 import { useEffect, useRef, useMemo } from 'react';
